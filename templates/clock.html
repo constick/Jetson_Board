@@ -34,7 +34,7 @@
         
 	</head>
 	<body>
-          <a href="/room{{room}}" class="button">back</a>
+          <a href="/setting_clock" class="button">back</a>
         <div class="header">
         <h1 class="header-font">Room {{room}}</h1>
         </div>
@@ -84,6 +84,10 @@
 							<td>{{job["date"]}}</td>
 							<td>{{job["begin"]}}</td>
 							<td>{{job["end"]}}</td>
+							<td>
+								<form action="/deletecron">
+								<button type="submit">delete</button>
+							</td>
 						</tr>
 					{% endfor %}
 				</tbody>
